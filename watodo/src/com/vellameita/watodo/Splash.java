@@ -12,7 +12,7 @@ public class Splash extends Activity{
 	protected void onCreate(Bundle watodoWhenYouLoveBacon) {
 		super.onCreate(watodoWhenYouLoveBacon);
 		setContentView(R.layout.splash);
-		splashSong = MediaPlayer.create(Splash.this,R.raw.thexxintro);
+		splashSong = MediaPlayer.create(Splash.this,R.raw.pokeballin);
 		splashSong.start();
 		Thread timer  = new Thread(){
 			public void run(){

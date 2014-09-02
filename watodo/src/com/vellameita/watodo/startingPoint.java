@@ -26,13 +26,13 @@ public class startingPoint extends Activity {
 		add.setOnClickListener(new View.OnClickListener() {					
 			public void onClick(View v) {	
 				counter++;
-				display.setText("Added One " +counter);
+				display.setText("You have raped " +counter + " pokemon");
 			}
 		});
 		sub.setOnClickListener(new View.OnClickListener() {					
 			public void onClick(View v) {	
 				counter--;
-				display.setText("Subbed One " + counter);
+				display.setText("You still have raped " + counter + " pokemon");
 			}
 		});
 		
