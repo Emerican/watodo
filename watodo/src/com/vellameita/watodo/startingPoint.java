@@ -34,13 +34,12 @@ public class startingPoint extends Activity {
 				counter--;
 				display.setText("You still have raped " + counter + " pokemon");
 			}
-		});
-		
+		});		
 		link.setOnClickListener(new View.OnClickListener(){
 		public void onClick(View v) {
 		Uri uri = Uri.parse("http://www.strautmanis.lv");
-		        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-		       startActivity(intent); 
+		        Intent callLink = new Intent(Intent.ACTION_VIEW, uri);
+		       startActivity(callLink); 
 			}
 		});
 		
