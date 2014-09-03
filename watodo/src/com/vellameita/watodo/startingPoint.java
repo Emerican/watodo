@@ -1,5 +1,6 @@
 package com.vellameita.watodo;
 import android.app.Activity;
+import android.content.Intent;
 //import android.content.Intent;
 //import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +13,9 @@ public class startingPoint extends Activity {
 	//Button link;
 	Button add;
 	Button sub;
+	Button testSprite;
 	TextView display;
+	
 		
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -22,6 +25,7 @@ public class startingPoint extends Activity {
 	//link = (Button) findViewById(R.id.bLink);
 		add = (Button) findViewById(R.id.bAdd);
 		sub = (Button) findViewById(R.id.bSub);
+		testSprite = (Button) findViewById(R.id.testSprite);
 		display = (TextView) findViewById(R.id.tvDisplay);
 		add.setOnClickListener(new View.OnClickListener() {					
 			public void onClick(View v) {	
@@ -34,7 +38,15 @@ public class startingPoint extends Activity {
 				counter--;
 				display.setText("You still have raped " + counter + " pokemon");
 			}
-		});		
+		});	
+		testSprite.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent openTestSprite = new Intent("com.vellameita.watodo.TESTSPRITE");
+				startActivity(openTestSprite);
+			}
+		});
 	/*	link.setOnClickListener(new View.OnClickListener(){
 		public void onClick(View v) {
 		Uri uri = Uri.parse("http://www.strautmanis.lv");

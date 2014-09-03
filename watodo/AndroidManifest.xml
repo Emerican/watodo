@@ -25,7 +25,12 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
-        
+          <activity android:name=".testSprite">
+        <intent-filter>
+            <action android:name="com.vellameita.watodo.TESTSPRITE" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
     </application>
     
 

@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
-
-
 public class Splash extends Activity{
 	MediaPlayer splashSong;
 	protected void onCreate(Bundle watodoWhenYouLoveBacon) {
@@ -17,7 +15,7 @@ public class Splash extends Activity{
 		Thread timer  = new Thread(){
 			public void run(){
 				try{
-					sleep(10000);
+					sleep(2000);
 				} catch(InterruptedException e){
 					e.printStackTrace();
 				} finally{
