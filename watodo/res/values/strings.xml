@@ -4,5 +4,5 @@
     <string name="total">you have raped NULL pokemon</string>
 	<string name="btnAdd">rape one</string>
 	<string name="btnSub">unrape one</string>
-	<string name="btnLink">Link</string>
+<!--<string name="btnLink">Link</string>  -->	
 </resources>
