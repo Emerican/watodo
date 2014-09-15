@@ -1,13 +1,10 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"  
     package="com.vellameita.watodo"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -30,9 +27,6 @@
             <action android:name="com.vellameita.watodo.TESTSPRITE" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
-        </activity>
-      
-    </application>
-    
-
+        </activity>      
+    </application>    
 </manifest>

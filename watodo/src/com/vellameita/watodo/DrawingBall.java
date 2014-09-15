@@ -24,24 +24,25 @@ public class DrawingBall extends View {
 		// TODO Auto-generated method stub
 		super.onDraw(canvas);
 		Rect ourRect = new Rect();
-		ourRect.set(0, 0, canvas.getWidth(), canvas.getHeight());
-		Paint red = new Paint();
-		red.setColor(Color.RED);
-		red.setStyle(Paint.Style.FILL);
+		ourRect.set(0, 0, canvas.getWidth(), canvas.getHeight()); // canvas.getHeight/width()/int works.
+		Paint cyan = new Paint();
+		cyan.setColor(Color.CYAN);
+		cyan.setStyle(Paint.Style.FILL);
+	
 		
-		canvas.drawRect(ourRect,red);
+		canvas.drawRect(ourRect,cyan);
 		if(x < canvas.getWidth()){
 		x += 5;
 		}else{
 			x = 0;
 		}
 		if(y < canvas.getHeight()){
-		y += 5;}
+		y += 3;
+		}
 		else{
 			y = 0;
-		}
-		
-		Paint p = new Paint();
+		}		
+		Paint p = new Paint();	
 		canvas.drawBitmap(bball, x, y, p);
 		invalidate();
 		}
